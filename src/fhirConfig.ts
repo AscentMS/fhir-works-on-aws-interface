@@ -116,6 +116,7 @@ export interface Profile {
     bulkDataAccess?: BulkDataAccess;
     genericResource?: GenericResource;
     resources?: Resources;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     compiledImplementationGuides?: any;
 }
 /**

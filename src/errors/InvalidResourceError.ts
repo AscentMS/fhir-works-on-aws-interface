@@ -3,7 +3,6 @@
  *  SPDX-License-Identifier: Apache-2.0
  */
 
-// eslint-disable-next-line import/prefer-default-export
 export class InvalidResourceError extends Error {
     readonly isInvalidResourceError: boolean;
 

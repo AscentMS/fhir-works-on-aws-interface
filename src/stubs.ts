@@ -11,7 +11,8 @@ import { Persistence } from './persistence';
 import { Bundle } from './bundle';
 import { BulkDataAccess } from './bulkDataAccess';
 
-export module stubs {
+// eslint-disable-next-line @typescript-eslint/no-namespace
+export namespace stubs {
     export const bundle: Bundle = {
         batch(request) {
             throw new Error('Method not implemented.');
@@ -54,18 +55,18 @@ export module stubs {
     };
 
     export const passThroughAuthz: Authorization = {
-        // eslint-disable-next-line @typescript-eslint/no-empty-function
+         
         async verifyAccessToken(request) {
             return {};
         },
-        // eslint-disable-next-line @typescript-eslint/no-empty-function
+         
         async isBundleRequestAuthorized(request) {},
         async authorizeAndFilterReadResponse(request) {
             return request.readResponse;
         },
-        // eslint-disable-next-line @typescript-eslint/no-empty-function
+         
         async isWriteRequestAuthorized(request) {},
-        // eslint-disable-next-line @typescript-eslint/no-empty-function
+         
         async isAccessBulkDataJobAllowed(request: AccessBulkDataJobRequest) {},
         async getSearchFilterBasedOnIdentity(request: GetSearchFilterBasedOnIdentityRequest) {
             return [];

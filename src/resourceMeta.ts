@@ -17,6 +17,7 @@ export interface Meta {
     versionId: string;
     lastUpdated: string;
     source?: string;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     profile?: any | any[];
     security?: Coding | Coding[];
     tag?: Coding | Coding[];

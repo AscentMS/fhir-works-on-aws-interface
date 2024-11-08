@@ -8,6 +8,7 @@ import { ExportType } from './bulkDataAccess';
 import { BulkDataAuth } from './authorization';
 import { MethodNotAllowedError } from './errors/MethodNotAllowedError';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function chunkArray(myArray: any[], chunkSize: number): any[][] {
     const results = [];
 
@@ -18,6 +19,7 @@ export function chunkArray(myArray: any[], chunkSize: number): any[][] {
     return results;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function clone(item: any) {
     return JSON.parse(JSON.stringify(item));
 }
