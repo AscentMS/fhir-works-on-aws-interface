@@ -17,9 +17,6 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --immutable
-        env:
-          #Used for pulling packages from other repositories
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Run lint
         run: yarn lint
