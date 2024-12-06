@@ -3,9 +3,7 @@ name: Build Library
 on:
   push:
     branches:
-    - main
-    tags:
-    - '*'
+    - feature/DEVOPS-1789_publish-temp
 
 jobs:
   publish:
